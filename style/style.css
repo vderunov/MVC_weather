@@ -1,0 +1,16 @@
+#map {
+  height: 540px;
+  width: 950px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.root {
+  margin-right: 10px;
+}
+
+#pac-input {
+  font-size: 20px;
+}
