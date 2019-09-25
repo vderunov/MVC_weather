@@ -1,7 +1,6 @@
 export class ModelWeather {
   constructor(contr) {
     this.controller = contr;
-    this.root = document.querySelector('.root');
     this.link = 'https://api.openweathermap.org/data/2.5/weather?q=';
     this.api = 'APPID=cc6eb1dd89b9dbb84bb005d55fc16bab';
     this.weather = {};
@@ -32,7 +31,7 @@ export class ModelWeather {
       .then(response => {
         this.coords.lat = response.results[0].geometry.location.lat;
         this.coords.lng = response.results[0].geometry.location.lng;
-        this.controller.getCoords(this.coords);
+        this.controller.getCoords();
       });
   }
 
